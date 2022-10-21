@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <cctype>
 #include <string>
 #include "funcs.h"
