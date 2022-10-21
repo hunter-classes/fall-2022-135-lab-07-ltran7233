@@ -25,15 +25,18 @@ int main()
 	in_file.open("bad-code.cpp");
 	while (std::getline(in_file, str))
 	{
-		correctStr += removeLeadingSpaces(str);
 		correctLine = removeLeadingSpaces(str);
-		correctStr += "\n";
-		tabs = countTab(correctStr);
-		std::cout << "Tab Amount: " << tabs << std::endl;
+		if (correctLine[0] == '}')
+		{
+			tabs--;
+		}
 		for (int i=0; i<tabs; i++)
 		{
 			correctStr += "\t";
 		}
+		correctStr += correctLine;
+		correctStr += "\n";
+		tabs = countTab(correctStr);
 	}
 	std::cout << "Removing Leading Spaces and Adding Tabs: \n" << std::endl;
 	std::cout << correctStr << std::endl;
