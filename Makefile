@@ -1,11 +1,11 @@
-main: main.o unindent.o
-	g++ -o main main.o unindent.o
+main: main.o funcs.o
+	g++ -o main main.o funcs.o
  
-main.o: main.cpp unindent.h
+main.o: main.cpp funcs.h
 	g++ -c main.cpp
 
-unindent.o: unindent.cpp unindent.h
-	g++ -c unindent.cpp
+funcs.o: funcs.cpp funcs.h
+	g++ -c funcs.cpp
 
 clean:
-	rm -f main.o unindent.o
+	rm -f main.o funcs.o

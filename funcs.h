@@ -1,5 +1,5 @@
-#ifndef UNINDENT_H
-#define UNINDENT_H
+#ifndef FUNCS_H
+#define FUNCS_H
 
 std::string removeLeadingSpaces(std::string line);
 int countTab(std::string line);

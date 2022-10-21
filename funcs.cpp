@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cctype>
 #include <string>
-#include "unindent.h"
+#include "funcs.h"
 
 std::string removeLeadingSpaces(std::string line)
 {
