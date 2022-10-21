@@ -45,7 +45,7 @@ int main()
 	out_file << correctStr;
 	out_file.close();
 	std::ifstream new_file("fixed-code.cpp");
-	std::cout << "Output File Contents: \n" << std::endl;
+	std::cout << "Fixed Code File Contents: \n" << std::endl;
 	while (std::getline(new_file, output))
 	{
 		std::cout << output << std::endl;
