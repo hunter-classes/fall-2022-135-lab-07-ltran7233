@@ -19,3 +19,24 @@ std::string removeLeadingSpaces(std::string line)
 	return str;
 }
 
+int countTab(std::string line)
+{
+	int open = countChar(line, '{');
+	int close = countChar(line, '}');
+	int count = open - close;
+	return count;
+}
+
+int countChar(std::string line, char c)
+{
+	int count = 0;
+	for (int i=0; i<line.length(); i++)
+	{
+		if (line[i]==c)
+		{
+			count++;
+		}
+	}
+	return count;
+}
+
