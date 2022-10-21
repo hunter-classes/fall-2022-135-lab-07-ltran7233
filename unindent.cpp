@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cctype>
 #include <string>
+#include "unindent.h"
 
 std::string removeLeadingSpaces(std::string line)
 {
@@ -17,5 +18,4 @@ std::string removeLeadingSpaces(std::string line)
 	}
 	return str;
 }
-
 
