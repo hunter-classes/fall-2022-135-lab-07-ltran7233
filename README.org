@@ -1,12 +1,12 @@
 * Fall 2022 - Lab 07
 
-* Last name:
+* Last name: Tran
 
-* First name:
+* First name: Lina
 
-* GitHub username:
+* GitHub username: ltran7233
 
-* Notes:
+* Notes: The "bad-code.cpp" is the poorly formatted file, and the main file will create a "fixed-code.cpp" file with the fixed formatting.
 
 
   
