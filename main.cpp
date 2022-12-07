@@ -3,6 +3,8 @@
 #include <string>
 #include "funcs.h"
 
+// New comment for pull request
+
 int main()
 {
 	std::string str = "";
