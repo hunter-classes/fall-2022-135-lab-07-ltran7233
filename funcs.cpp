@@ -17,6 +17,7 @@ std::string removeLeadingSpaces(std::string line)
 	}
 	return str;
 }
+//removes the first spaces of a line until it hits a non-space character
 
 int countTab(std::string line)
 {
@@ -25,6 +26,7 @@ int countTab(std::string line)
 	int count = open - close;
 	return count;
 }
+//Counts brackets which indicates tabs
 
 int countChar(std::string line, char c)
 {
@@ -38,4 +40,4 @@ int countChar(std::string line, char c)
 	}
 	return count;
 }
-
+//Counts the number of times a specific character appears in a line
